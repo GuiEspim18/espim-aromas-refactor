@@ -1,0 +1,72 @@
+{
+  "site": {
+    "name": "Espim Aromas",
+    "tagline": "Velas Aromáticas Artesanais",
+    "description": "Descubra nossas velas aromáticas feitas com amor e essências naturais",
+    "logo": "/logo.svg",
+    "favicon": "/favicon.ico"
+  },
+  "contact": {
+    "phone": "11 9000-0000",
+    "email": "espim.aromas@gmail.com",
+    "whatsapp": "11 9000-0000"
+  },
+  "social": {
+    "instagram": "@espimaromas",
+    "facebook": "Espim Aromas",
+    "tiktok": "@espimaromas"
+  },
+  "navigation": {
+    "main": [
+      {
+        "label": "Home",
+        "path": "/"
+      },
+      {
+        "label": "Produtos",
+        "path": "/produtos"
+      },
+      {
+        "label": "Promoções",
+        "path": "/promocoes"
+      }
+    ]
+  },
+  "pages": {
+    "home": {
+      "title": "Bem-vindo à Espim Aromas",
+      "subtitle": "Descubra o aroma perfeito para seu espaço",
+      "heroText": "Velas aromáticas artesanais feitas com essências naturais e cuidado especial"
+    },
+    "produtos": {
+      "title": "Nossos Produtos",
+      "subtitle": "Explore nossa coleção de velas aromáticas"
+    },
+    "promocoes": {
+      "title": "Promoções",
+      "subtitle": "Aproveite nossas ofertas especiais"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Espim Aromas. Todos os direitos reservados.",
+    "links": [
+      {
+        "label": "Sobre",
+        "path": "/sobre"
+      },
+      {
+        "label": "Contato",
+        "path": "/contato"
+      },
+      {
+        "label": "Políticas de Privacidade",
+        "path": "/privacidade"
+      }
+    ]
+  },
+  "checkout": {
+    "title": "Finalizar Compra",
+    "subtitle": "Complete seu pedido em poucos passos",
+    "guestMessage": "Compre como visitante - não é necessário cadastro!"
+  }
+}
