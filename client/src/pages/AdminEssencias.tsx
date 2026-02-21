@@ -5,16 +5,19 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Loader2, Plus, Edit2, Trash2, X } from 'lucide-react';
 
-interface Essence {
-  id: number;
+type Essence = {
+  id: string;
   name: string;
-  description?: string | null;
-  imageUrl?: string | null;
-}
+  description?: string;
+  isActive?: boolean;
+  createdAt?: Date;
+  updatedAt?: Date;
+  imageUrl?: string;
+};
 
 export default function AdminEssencias() {
   const [showForm, setShowForm] = useState(false);
-  const [editingId, setEditingId] = useState<number | null>(null);
+  const [editingId, setEditingId] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     description: '',
@@ -66,7 +69,7 @@ export default function AdminEssencias() {
     setShowForm(true);
   };
 
-  const handleDelete = async (id: number) => {
+  const handleDelete = async (id: string) => {
     if (confirm('Tem certeza que deseja remover esta essência?')) {
       try {
         await deleteMutation.mutateAsync({ id });
